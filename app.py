@@ -30,7 +30,7 @@ def about():
     return render_template("about.html")
 
 
-@app.route('/create_article')
+@app.route('/create-article')
 def create_article():
     return render_template("create_article.html")
 
