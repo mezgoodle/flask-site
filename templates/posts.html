@@ -8,7 +8,7 @@
             <h2>{{article.title}}</h2>
             <p>{{article.intro}}</p>
             <p><b>Date: {{article.date.date()}}</b></p>
-            <button class="btn btn-warning">Detail</button>
+            <a href="/posts/{{article.id}}" class="btn btn-warning">Detail</a>
         </div>
     {% endfor %}
 </div>
