@@ -39,7 +39,7 @@ def posts():
 @app.route('/posts/<int:id>')
 def post_detail(id):
     article = Article.query.get(id)
-    return render_template("post_detail.html", articles=article)
+    return render_template("post_detail.html", article=article)
 
 
 @app.route('/create-article', methods=['POST', 'GET'])
