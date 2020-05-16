@@ -79,7 +79,6 @@ def create_article():
         text = request.form['text']
 
         article = Article(title=title, intro=intro, text=text)
-        
         try:
             db.session.add(article)
             db.session.commit()
