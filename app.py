@@ -67,7 +67,6 @@ def post_update(id):
         except:
             return "While updating article error was happening"
     else:
-        
         return render_template("post_update.html", article=article)
 
 
@@ -90,4 +89,4 @@ def create_article():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
